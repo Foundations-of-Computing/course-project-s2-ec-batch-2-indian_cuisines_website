@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     navLinks.forEach(link => {
         if (link.href === currentPage) {
-            link.style.boxShadow = "0px 4px 10px rgba(0, 0, 0, 0.5)";
+            link.style.boxShadow = "0px 2px 20px rgba(255, 255, 255, 0.8)";
             link.style.fontWeight = "bold";
         }
     });
