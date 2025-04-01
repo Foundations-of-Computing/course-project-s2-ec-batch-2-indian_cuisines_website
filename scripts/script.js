@@ -32,13 +32,13 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 });
 document.addEventListener("DOMContentLoaded", function () {
-    let navLinks = document.querySelectorAll("nav a"); // Select all nav links
-    let currentPage = window.location.href; // Get the current page URL
+    let navLinks = document.querySelectorAll("nav a");
+    let currentPage = window.location.href;
 
     navLinks.forEach(link => {
         if (link.href === currentPage) {
-            link.style.boxShadow = "0px 4px 10px rgba(0, 0, 0, 0.5)"; // Apply shadow effect
-            link.style.fontWeight = "bold"; // Optional: Make text bold
+            link.style.boxShadow = "0px 4px 10px rgba(0, 0, 0, 0.5)";
+            link.style.fontWeight = "bold";
         }
     });
 });
