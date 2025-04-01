@@ -7,30 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
     buttons.forEach(button => {
         button.addEventListener("click", showAlert);
     });
-    let navLinks = document.querySelectorAll("nav a");
-    navLinks.forEach(link => {
-        link.addEventListener("mouseover", function (event) {
-            changeColor(event, "gray");
-        });
-        link.addEventListener("mouseout", function (event) {
-            changeColor(event, "gray");
-        });
-    });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    let themeButton = document.getElementById("themeButton");
-
-    themeButton.onclick = function () {
-        if (document.body.style.backgroundColor === "black") {
-            document.body.style.backgroundColor = "white";
-            document.body.style.color = "black";
-        } else {
-            document.body.style.backgroundColor = "black";
-            document.body.style.color = "aliceblue";
-        }
-    };
-});
 document.addEventListener("DOMContentLoaded", function () {
     let navLinks = document.querySelectorAll("nav a");
     let currentPage = window.location.href;
